@@ -408,12 +408,24 @@ class MemoryEngine:
 
         try:
             import asyncio
+            import concurrent.futures
+            
+            # Try to get existing loop
             try:
                 loop = asyncio.get_event_loop()
                 if loop.is_running():
-                    # If loop is running, schedule as task instead
-                    asyncio.create_task(self._store_conversation_async(messages, response))
+                    # If loop is running, run in a thread with new event loop
+                    # This ensures storage completes synchronously
+                    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+                        future = executor.submit(self._store_in_new_loop, messages, response)
+                        future.result()  # Wait for completion
                     return
+            except RuntimeError:
+                pass
+            
+            # No running loop, use current/new loop
+            try:
+                loop = asyncio.get_event_loop()
             except RuntimeError:
                 loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(loop)
@@ -425,22 +437,7 @@ class MemoryEngine:
             
             if memories:
                 # Convert response to dict if needed
-                response_dict = response
-                if hasattr(response, 'model_dump'):
-                    response_dict = response.model_dump()
-                elif hasattr(response, 'dict'):
-                    response_dict = response.dict()
-                elif hasattr(response, '__dict__'):
-                    try:
-                        import json
-                        response_dict = json.loads(json.dumps(response.__dict__, default=str))
-                    except:
-                        response_dict = {
-                            "id": getattr(response, 'id', None),
-                            "model": getattr(response, 'model', None),
-                            "choices": [choice.__dict__ if hasattr(choice, '__dict__') else str(choice) 
-                                       for choice in getattr(response, 'choices', [])] if hasattr(response, 'choices') else []
-                        }
+                response_dict = self._response_to_dict(response)
                 
                 loop.run_until_complete(
                     self._storage.store_memories(memories)
@@ -450,6 +447,38 @@ class MemoryEngine:
                 )
         except Exception as e:
             logger.error(f"Failed to store conversation (sync): {e}")
+            import traceback
+            logger.debug(traceback.format_exc())
+    
+    def _store_in_new_loop(self, messages: List[Dict[str, Any]], response: Any):
+        """Store conversation in a new event loop (used when main loop is running)."""
+        import asyncio
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        try:
+            loop.run_until_complete(self._store_conversation_async(messages, response))
+        finally:
+            loop.close()
+    
+    def _response_to_dict(self, response: Any) -> Dict[str, Any]:
+        """Convert response object to dictionary."""
+        response_dict = response
+        if hasattr(response, 'model_dump'):
+            response_dict = response.model_dump()
+        elif hasattr(response, 'dict'):
+            response_dict = response.dict()
+        elif hasattr(response, '__dict__'):
+            try:
+                import json
+                response_dict = json.loads(json.dumps(response.__dict__, default=str))
+            except:
+                response_dict = {
+                    "id": getattr(response, 'id', None),
+                    "model": getattr(response, 'model', None),
+                    "choices": [choice.__dict__ if hasattr(choice, '__dict__') else str(choice) 
+                               for choice in getattr(response, 'choices', [])] if hasattr(response, 'choices') else []
+                }
+        return response_dict
 
     async def _store_conversation_async(
         self, messages: List[Dict[str, Any]], response: Any
