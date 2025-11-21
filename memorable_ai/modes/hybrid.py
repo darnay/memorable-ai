@@ -11,8 +11,8 @@ Reference: https://github.com/GibsonAI/Memori
 import logging
 from typing import Any, Dict, List
 
-from memorable.modes.conscious import ConsciousMode
-from memorable.modes.auto import AutoMode
+from memorable_ai.modes.conscious import ConsciousMode
+from memorable_ai.modes.auto import AutoMode
 
 logger = logging.getLogger(__name__)
 

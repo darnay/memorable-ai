@@ -14,7 +14,7 @@ References:
 
 __version__ = "0.1.0"
 
-from memorable.core.memory_engine import MemoryEngine
+from memorable_ai.core.memory_engine import MemoryEngine
 
 __all__ = ["MemoryEngine"]
 

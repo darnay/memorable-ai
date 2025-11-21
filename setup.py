@@ -52,7 +52,7 @@ setup(
     install_requires=requirements,
     entry_points={
         "console_scripts": [
-            "memorable=memorable.cli:main",
+            "memorable=memorable_ai.cli:main",
         ],
     },
     extras_require={

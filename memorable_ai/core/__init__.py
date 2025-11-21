@@ -1,12 +1,12 @@
 """Core memory engine components."""
 
-from memorable.core.memory_engine import MemoryEngine
-from memorable.core.storage import Storage
-from memorable.core.extraction import MemoryExtractor
-from memorable.core.retrieval import HybridRetriever
-from memorable.core.consolidation import MemoryConsolidator
-from memorable.core.temporal import TemporalMemory
-from memorable.core.errors import (
+from memorable_ai.core.memory_engine import MemoryEngine
+from memorable_ai.core.storage import Storage
+from memorable_ai.core.extraction import MemoryExtractor
+from memorable_ai.core.retrieval import HybridRetriever
+from memorable_ai.core.consolidation import MemoryConsolidator
+from memorable_ai.core.temporal import TemporalMemory
+from memorable_ai.core.errors import (
     MemorableError,
     StorageError,
     RetrievalError,

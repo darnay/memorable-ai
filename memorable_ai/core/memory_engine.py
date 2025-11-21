@@ -14,14 +14,14 @@ References:
 import logging
 from typing import Any, Dict, List, Optional
 
-from memorable.core.interceptor import LLMInterceptor
-from memorable.core.storage import Storage
-from memorable.core.extraction import MemoryExtractor
-from memorable.core.retrieval import HybridRetriever
-from memorable.core.consolidation import MemoryConsolidator
-from memorable.core.temporal import TemporalMemory
-from memorable.graph.builder import GraphBuilder
-from memorable.utils.config import MemorableConfig
+from memorable_ai.core.interceptor import LLMInterceptor
+from memorable_ai.core.storage import Storage
+from memorable_ai.core.extraction import MemoryExtractor
+from memorable_ai.core.retrieval import HybridRetriever
+from memorable_ai.core.consolidation import MemoryConsolidator
+from memorable_ai.core.temporal import TemporalMemory
+from memorable_ai.graph.builder import GraphBuilder
+from memorable_ai.utils.config import MemorableConfig
 
 logger = logging.getLogger(__name__)
 
@@ -194,9 +194,9 @@ class MemoryEngine:
 
     def _initialize_mode_handler(self):
         """Initialize memory mode handler based on configured mode."""
-        from memorable.modes.conscious import ConsciousMode
-        from memorable.modes.auto import AutoMode
-        from memorable.modes.hybrid import HybridMode
+        from memorable_ai.modes.conscious import ConsciousMode
+        from memorable_ai.modes.auto import AutoMode
+        from memorable_ai.modes.hybrid import HybridMode
 
         if self.config.memory.mode == "conscious":
             self._mode_handler = ConsciousMode(self._retrieval)

@@ -2,7 +2,7 @@
 CLI entry point for memorable package.
 """
 
-from memorable.cli import main
+from memorable_ai.cli import main
 
 if __name__ == "__main__":
     main()

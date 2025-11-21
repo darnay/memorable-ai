@@ -12,7 +12,7 @@ References:
 import logging
 from datetime import datetime
 from typing import Any, Dict, List, Optional
-from memorable.core.errors import StorageError
+from memorable_ai.core.errors import StorageError
 from sqlalchemy import (
     create_engine,
     Column,

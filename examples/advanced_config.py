@@ -5,7 +5,7 @@ Demonstrates advanced configuration options.
 """
 
 import os
-from memorable import MemoryEngine, MemorableConfig, DatabaseConfig, GraphConfig, MemoryConfig, LLMConfig
+from memorable_ai import MemoryEngine, MemorableConfig, DatabaseConfig, GraphConfig, MemoryConfig, LLMConfig
 
 # Build configuration programmatically
 config = MemorableConfig(

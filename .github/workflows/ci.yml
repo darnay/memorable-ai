@@ -44,7 +44,7 @@ jobs:
         echo "Test collection result: $TEST_COUNT"
         
         # Run tests with coverage, but don't fail on coverage requirement for now
-        pytest tests/ -v --cov=memorable --cov-report=xml --cov-report=term-missing --cov-fail-under=0 || true
+        pytest tests/ -v --cov=memorable_ai --cov-report=xml --cov-report=term-missing --cov-fail-under=0 || true
         
         # Check if any tests actually ran
         if [ -f coverage.xml ]; then

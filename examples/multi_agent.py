@@ -4,7 +4,7 @@ Multi-Agent Example
 Demonstrates Memorable with multi-agent systems.
 """
 
-from memorable import MemoryEngine
+from memorable_ai import MemoryEngine
 from openai import OpenAI
 
 # Initialize with shared memory

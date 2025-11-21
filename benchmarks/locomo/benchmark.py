@@ -59,7 +59,7 @@ class LOCOMOBenchmark:
 
     async def _test_single_hop(self) -> float:
         """Test single-hop question answering."""
-        from memorable.benchmarks.locomo.test_data import get_single_hop_questions, TEST_CONVERSATIONS
+        from memorable_ai.benchmarks.locomo.test_data import get_single_hop_questions, TEST_CONVERSATIONS
         
         questions = get_single_hop_questions()
         correct = 0
@@ -102,7 +102,7 @@ class LOCOMOBenchmark:
 
     async def _test_multi_hop(self) -> float:
         """Test multi-hop question answering."""
-        from memorable.benchmarks.locomo.test_data import get_multi_hop_questions, TEST_CONVERSATIONS
+        from memorable_ai.benchmarks.locomo.test_data import get_multi_hop_questions, TEST_CONVERSATIONS
         
         questions = get_multi_hop_questions()
         correct = 0
@@ -143,7 +143,7 @@ class LOCOMOBenchmark:
 
     async def _test_temporal(self) -> float:
         """Test temporal question answering."""
-        from memorable.benchmarks.locomo.test_data import get_temporal_questions, TEST_CONVERSATIONS
+        from memorable_ai.benchmarks.locomo.test_data import get_temporal_questions, TEST_CONVERSATIONS
         from datetime import datetime, timedelta
         
         questions = get_temporal_questions()
@@ -191,7 +191,7 @@ class LOCOMOBenchmark:
 
     async def _test_open_domain(self) -> float:
         """Test open-domain question answering."""
-        from memorable.benchmarks.locomo.test_data import get_open_domain_questions
+        from memorable_ai.benchmarks.locomo.test_data import get_open_domain_questions
         
         questions = get_open_domain_questions()
         correct = 0

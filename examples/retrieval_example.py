@@ -5,7 +5,7 @@ Demonstrates different retrieval strategies.
 """
 
 import asyncio
-from memorable import MemoryEngine
+from memorable_ai import MemoryEngine
 
 async def main():
     # Initialize

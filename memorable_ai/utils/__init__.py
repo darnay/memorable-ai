@@ -1,20 +1,20 @@
 """Utility functions and helpers."""
 
-from memorable.utils.config import (
+from memorable_ai.utils.config import (
     MemorableConfig,
     DatabaseConfig,
     GraphConfig,
     MemoryConfig,
     LLMConfig,
 )
-from memorable.utils.validators import (
+from memorable_ai.utils.validators import (
     validate_connection_string,
     validate_memory_type,
     validate_mode,
     sanitize_content,
     validate_messages,
 )
-from memorable.utils.helpers import (
+from memorable_ai.utils.helpers import (
     generate_memory_id,
     format_timestamp,
     parse_timestamp,
@@ -22,8 +22,8 @@ from memorable.utils.helpers import (
     calculate_similarity,
     merge_memories,
 )
-from memorable.utils.logging_config import setup_logging, get_logger
-from memorable.utils.performance import time_function, PerformanceMonitor
+from memorable_ai.utils.logging_config import setup_logging, get_logger
+from memorable_ai.utils.performance import time_function, PerformanceMonitor
 
 __all__ = [
     "MemorableConfig",

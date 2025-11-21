@@ -6,7 +6,7 @@ import argparse
 import asyncio
 import sys
 from typing import Optional
-from memorable import MemoryEngine, MemorableConfig
+from memorable_ai import MemoryEngine, MemorableConfig
 
 
 async def cmd_add_memory(args):

@@ -15,7 +15,7 @@ Usage:
 """
 
 import os
-from memorable import MemoryEngine
+from memorable_ai import MemoryEngine
 import litellm
 
 # Configuration

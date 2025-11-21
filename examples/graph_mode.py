@@ -4,7 +4,7 @@ Graph Mode Example
 Demonstrates graph-based memory for multi-hop reasoning.
 """
 
-from memorable import MemoryEngine
+from memorable_ai import MemoryEngine
 from openai import OpenAI
 
 # Initialize with graph enabled

@@ -6,7 +6,7 @@ Demonstrates the easiest way to use Memorable - zero-code integration.
 Inspired by Memori's simple integration approach.
 """
 
-from memorable import MemoryEngine
+from memorable_ai import MemoryEngine
 from openai import OpenAI
 
 # Initialize Memory Engine

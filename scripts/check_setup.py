@@ -65,7 +65,7 @@ def check_basic_functionality():
     print("\nChecking basic functionality...")
     
     try:
-        from memorable import MemoryEngine
+        from memorable_ai import MemoryEngine
         
         # Try to create an instance
         memory = MemoryEngine(database="sqlite:///:memory:", mode="auto")

@@ -4,7 +4,7 @@ Enterprise Example
 Demonstrates enterprise features like namespaces and multi-user support.
 """
 
-from memorable import MemoryEngine, MemorableConfig
+from memorable_ai import MemoryEngine, MemorableConfig
 from openai import OpenAI
 
 # Enterprise configuration

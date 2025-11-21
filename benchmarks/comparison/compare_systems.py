@@ -177,7 +177,7 @@ class SystemComparison:
 
 async def generate_comparison_report() -> str:
     """Generate markdown comparison report."""
-    from memorable import MemoryEngine
+    from memorable_ai import MemoryEngine
 
     memory = MemoryEngine(database="sqlite:///comparison.db")
     comparison = SystemComparison(memory)

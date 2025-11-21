@@ -21,7 +21,7 @@ twine upload --repository testpypi dist/*
 
 ```bash
 pip install --index-url https://test.pypi.org/simple/ memorable
-python3 -c "import memorable; print('✅ Success!')"
+python3 -c "import memorable_ai; print('✅ Success!')"
 ```
 
 ## Step 3: Publish to Production PyPI
@@ -43,7 +43,7 @@ twine upload dist/*
 
 ```bash
 pip install memorable-ai
-python3 -c "import memorable; print('✅ Success!')"
+python3 -c "import memorable_ai; print('✅ Success!')"
 ```
 
 ---

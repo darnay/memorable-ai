@@ -5,7 +5,7 @@ Demonstrates memory consolidation and importance scoring.
 """
 
 import asyncio
-from memorable import MemoryEngine
+from memorable_ai import MemoryEngine
 
 async def main():
     # Initialize with consolidation

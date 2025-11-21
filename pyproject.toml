@@ -53,7 +53,7 @@ dev = [
 ]
 
 [project.scripts]
-memorable = "memorable.cli:main"
+memorable = "memorable_ai.cli:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
