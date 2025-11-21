@@ -5,8 +5,27 @@ from setuptools import setup, find_packages
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-with open("requirements.txt", "r", encoding="utf-8") as fh:
-    requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
+# Read requirements from requirements.txt if it exists, otherwise use pyproject.toml dependencies
+try:
+    with open("requirements.txt", "r", encoding="utf-8") as fh:
+        requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
+except FileNotFoundError:
+    # Fallback: dependencies are defined in pyproject.toml
+    requirements = [
+        "sqlalchemy>=2.0.0",
+        "psycopg2-binary>=2.9.0",
+        "aiosqlite>=0.19.0",
+        "sentence-transformers>=2.2.0",
+        "numpy>=1.24.0",
+        "openai>=1.0.0",
+        "anthropic>=0.7.0",
+        "litellm>=1.0.0",
+        "networkx>=3.0",
+        "aiohttp>=3.9.0",
+        "pydantic>=2.0.0",
+        "python-dotenv>=1.0.0",
+        "structlog>=23.0.0",
+    ]
 
 setup(
     name="memorable",
