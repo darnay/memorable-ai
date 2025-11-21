@@ -1,6 +1,6 @@
 # PyPI Publishing - Quick Setup Guide
 
-This guide will help you publish Memorable to PyPI so users can `pip install memorable`.
+This guide will help you publish Memorable to PyPI so users can `pip install memorable-ai`.
 
 ## Step 1: Create PyPI Accounts (Manual - 5 minutes)
 
@@ -96,7 +96,7 @@ twine upload dist/*
 ## Step 7: Verify Production Installation
 
 ```bash
-pip install memorable
+pip install memorable-ai
 python3 -c "import memorable; print('✅ Memorable installed from PyPI!')"
 ```
 

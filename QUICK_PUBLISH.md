@@ -42,7 +42,7 @@ twine upload dist/*
 ## Step 4: Verify Production Installation
 
 ```bash
-pip install memorable
+pip install memorable-ai
 python3 -c "import memorable; print('✅ Success!')"
 ```
 
