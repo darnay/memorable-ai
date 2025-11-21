@@ -63,10 +63,18 @@ docs/_build/
 test_*.py
 !test_describe_simple.py
 
-# Analysis and temporary documentation
+# Internal/Development documentation (not needed for public repo)
 cursor_analyze_memori_and_supermemory_r.md
 *_TEST_RESULTS.md
 analysis_memory_projects.md
+FINAL_STATUS.md
+IMPLEMENTATION_CHECKLIST.md
+IMPLEMENTATION_STATUS.md
+EXECUTIVE_SUMMARY.md
+PROJECT_SUMMARY.md
+NEXT_STEPS.md
+FEATURES.md
+QUICK_START_GUIDE.md
 
 # Build artifacts
 memorable.egg-info/
