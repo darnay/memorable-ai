@@ -60,7 +60,7 @@ pip install memorable-ai[dev]
 ### 30-Second Example
 
 ```python
-from memorable import MemoryEngine
+from memorable_ai import MemoryEngine
 from openai import OpenAI
 
 # Initialize and enable (that's it!)
@@ -139,7 +139,7 @@ pip install -e ".[dev]"
 ### Basic Usage (OpenAI)
 
 ```python
-from memorable import MemoryEngine
+from memorable_ai import MemoryEngine
 from openai import OpenAI
 
 memory = MemoryEngine(database="sqlite:///memory.db", mode="auto")
@@ -155,7 +155,7 @@ response = client.chat.completions.create(
 ### With Anthropic Claude
 
 ```python
-from memorable import MemoryEngine
+from memorable_ai import MemoryEngine
 from anthropic import Anthropic
 
 memory = MemoryEngine(database="sqlite:///memory.db")
@@ -171,7 +171,7 @@ response = client.messages.create(
 ### With Gemini via LiteLLM
 
 ```python
-from memorable import MemoryEngine
+from memorable_ai import MemoryEngine
 import litellm
 
 memory = MemoryEngine(database="sqlite:///memory.db")
@@ -186,7 +186,7 @@ response = litellm.completion(
 ### With Graph Support
 
 ```python
-from memorable import MemoryEngine
+from memorable_ai import MemoryEngine
 
 memory = MemoryEngine(
     database="postgresql://user:pass@localhost/memorable",
@@ -202,7 +202,7 @@ memory.enable()
 
 ```python
 import asyncio
-from memorable import MemoryEngine
+from memorable_ai import MemoryEngine
 
 memory = MemoryEngine(database="sqlite:///memory.db")
 memory.enable()
@@ -289,7 +289,7 @@ export GEMINI_API_KEY="your-key-here"
 ### Programmatic Configuration
 
 ```python
-from memorable import MemoryEngine, MemorableConfig
+from memorable_ai import MemoryEngine, MemorableConfig
 
 config = MemorableConfig.from_env()
 memory = MemoryEngine(config=config)
@@ -400,7 +400,7 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/memorable.git
+git clone https://github.com/0sparsh2/memorable.git
 cd memorable
 
 # Install in development mode
